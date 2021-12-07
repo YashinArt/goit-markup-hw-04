@@ -126,6 +126,21 @@ padding-right: 15px;
 }
 /* Стили для hero */
 .hero{
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/bghero.jpg);
+    /* background-image: url(../images/bghero.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
     padding-top: 200px;
     padding-bottom: 200px;
     background-color: var(--background-hero-color);
