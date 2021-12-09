@@ -67,7 +67,7 @@ img{
 }
 /* ===========contener=========== */
 .contener {
-outline: 2px solid red;
+/* outline: 2px solid red; */
 margin-left: auto;
 margin-right: auto;
 width: 1200px;
@@ -109,6 +109,7 @@ padding-right: 15px;
 .contact{
     display: flex;
     margin-left: auto;
+    fill: var(--primary-text-color);
 }
 .contact .item:not(:last-child){
     margin-right: 50px;
@@ -127,23 +128,22 @@ padding-right: 15px;
 .contact .item:hover,
 .contact .item:focus {
     color: var(--accent-text-color);
+    fill:var(--accent-text-color);
 }
-.contact .item::before{
-    content: '';
+.contact .icon{
     display: inline-block;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    background-image: url(../images/email.svg);
+    
 }
-.contact .items::before{
-    content: '';
+.contact .icons{
     display: inline-block;
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    background-image: url(../images/tel.svg);
 }
+
 /* ===========Стили для hero=========== */
 .hero{
     max-width: 1600px;
@@ -371,8 +371,8 @@ padding-right: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     border: 1px solid #AFB1B8;
     margin-right: 10px;
     border-radius: 50%;
@@ -384,21 +384,27 @@ padding-right: 15px;
     height: 20px;
     background-repeat: no-repeat;
     background-position: center;
+    
+}
+.team-list .link{
+    
+    
+    padding: 11px;
+    border-radius: 50%;
     fill: #AFB1B8;
 }
 
 
 
-
-.team-list .items:hover,
-.team-list .items:focus{
+.team-list .link:hover,
+.team-list .link:focus{
     background-color: var(--accent-text-color);
     fill: var(--background-header-color);
 }
-.team-list .icon:hover,
+/* .team-list .icon:hover,
 .team-list .icon:focus{
     fill: var(--background-header-color);
-}
+} */
 
 .team-list .items:last-child{
     margin-right: 0;
