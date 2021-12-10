@@ -110,6 +110,9 @@ padding-right: 15px;
     display: flex;
     margin-left: auto;
     fill: var(--primary-text-color);
+    text-align: center;
+    
+    
 }
 .contact .item:not(:last-child){
     margin-right: 50px;
@@ -139,9 +142,11 @@ padding-right: 15px;
 }
 .contact .icons{
     display: inline-block;
+    
     width: 10px;
     height: 16px;
     margin-right: 10px;
+    
 }
 
 /* ===========Стили для hero=========== */
@@ -373,7 +378,7 @@ padding-right: 15px;
     justify-content: center;
     width: 44px;
     height: 44px;
-    border: 1px solid #AFB1B8;
+    /* border: 1px solid #AFB1B8; */
     margin-right: 10px;
     border-radius: 50%;
     
@@ -387,9 +392,10 @@ padding-right: 15px;
     
 }
 .team-list .link{
-    
-    
-    padding: 11px;
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
     border-radius: 50%;
     fill: #AFB1B8;
 }
@@ -493,7 +499,7 @@ padding-right: 15px;
     justify-content: center;
     width: 44px;
     height: 44px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid transparent;
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -506,13 +512,39 @@ padding-right: 15px;
     margin-right: 0;
 }
 /* ===========присоединяйтесь=========== */
+
+.footer-list .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
 .footer-list .icon{
     width: 20px;
     height: 20px;
     background-repeat: no-repeat;
     background-position: center;
     fill: var(--background-header-color);
+    
 }
+.footer-list .link{
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    border-radius: 50%;
+    background-color:rgba(255, 255, 255, 0.1);
+}
+.footer-list .link:hover,
+.footer-list .link:focus{
+    background-color: var(--accent-text-color);
+    
+}
+
+
 .contener-features .features-title{
     line-height: 16px;
     align-items: baseline;
@@ -567,6 +599,12 @@ padding-right: 15px;
 .button:focus{
     background-color: var(--accent-text-color);
     color: var(--hero-title-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+.project:hover,
+.project:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-button{
     display: flex;
