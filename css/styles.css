@@ -241,30 +241,28 @@ padding-right: 15px;
     width: calc((100%-90px)/4);
     margin-right: 30px;
 }
-.features .item::before{
-    margin-bottom: 30px;
-    display: block;
-    content: '';
+
+.features .icon{
+    width: 270px;
     height: 120px;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+    
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-team-color);
+    border-radius: 4px;
+    }
+.features .ico{
+    display: block;
+    
+    width: 70px;
+    height: 70px;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: var(--background-team-color);
 }
-.features .item:nth-child(1)::before{
-    background-image: url(../images/antenna.svg);
-}
-.features .item:nth-child(2)::before{
-    background-image: url(../images/clock.svg);
-}
-.features .item:nth-child(4)::before{
-    background-image: url(../images/astronaut.svg);
-}
-.features .item:nth-child(3)::before{
-    background-image: url(../images/diagram.svg);
-}
-.features .item:last-child{
-    margin-right: 0;
-}
+
+/* ---------- */
 /* один из способов сделать столбцы */
 /* .features .item{
     width: 270px;
@@ -493,16 +491,7 @@ padding-right: 15px;
     display: flex;
     list-style: none;    
 }
-.footer-list .item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border: 1px solid transparent;
-    margin-right: 10px;
-    border-radius: 50%;
-}
+
 .footer-list .item:hover,
 .footer-list .item:focus{
     background-color: var(--accent-text-color);
@@ -519,6 +508,7 @@ padding-right: 15px;
     justify-content: center;
     width: 44px;
     height: 44px;
+    border: 1px solid transparent;
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -543,11 +533,15 @@ padding-right: 15px;
     background-color: var(--accent-text-color);
     
 }
-
+.contener-features{
+    justify-content: flex-start;
+}
 
 .contener-features .features-title{
-    line-height: 16px;
-    align-items: baseline;
+    margin-top: 12px;
+    line-height: 1.14;
+    
+    text-transform: uppercase;
     
 }
 
